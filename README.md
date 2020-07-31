@@ -5,16 +5,46 @@
 ## 팀소개
  팀원 | 역할 
  ---|---
- 송현수 | ang
- 안덕우 | ang
- 윤미정 | ang
- 이가희 | ang
- 이지형 | ang
+ 송현수 | 화면기획&디자인 / 프로그램 설계
+ 안덕우 | DB 설계/ 관리자-회원관리 구현
+ 윤미정 | 로그인, 회원가입, 게시판 구현
+ 이가희 | DB 설계&관리 / 게시판, 관리자-매출관리 구현
+ 이지형 | 상품 리뷰, 장바구니, 주문기능 구현
  
 ## 담당 기능
 - 나만의집 로그인, 회원가입, 아이디&비밀번호 찾기, 게시판 기능
 - 카카오API를 활용하여 회원 로그인과 회원 가입 선택의 폭을 넓힘
 - 페이지 통합
+
+### 1.Login
+ - Login page(css) jsp
+ - Login function jsp
+    1. KAKAO_Login
+    2. Login
+
+### 2.Join
+- Join page(css) jsp
+    1. KAKAO_Join
+    2. Join
+- Join function jsp
+    1. KAKAO_Join
+    2. Join 
+
+### 3.Find_ID&PW
+- Find page(css) jsp
+- Find function jsp
+    1. Find_ID
+    2. Find_PW
+
+### 4.Board
+- Board page(css) jsp
+    1. Board_list
+    2. Board_choice
+    3. Board_insert
+- Board function jsp
+    1. Board_list
+    2. Board_choice
+    3. Board_insert
 
 ### 쿼리스트링
 1. 페이지 내에서 특정 정보를 클릭해 다음페이지로 값을 이동하고 싶을때<br>
@@ -22,4 +52,4 @@
 2. 카카오api 사용했을때<br>
   : 사용자의 로그인 정보를 담은 토큰을 콘솔에서 찍었을 때 정상적으로 출력되는 것을 확인할 수 있었지만,
   위의 이유처럼 다른페이지로 값이 제대로 전달되지 않는 것(null)을 확인할 수 있었다. 
-  
+  //사진추가

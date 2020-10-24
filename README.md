@@ -53,3 +53,26 @@
   : 사용자의 로그인 정보를 담은 토큰을 콘솔에서 찍었을 때 정상적으로 출력되는 것을 확인할 수 있었지만,
   위의 이유처럼 다른페이지로 값이 제대로 전달되지 않는 것(null)을 확인할 수 있었다. 
   //사진추가
+  
+  
+  ## 4. 윤미정
+- Login & Join
+    1. Join
+      <br> FireBase Auth 이메일 회원가입
+    2. Auto Login
+      <br> 초반에는 FireBase Auth에서 사용되는 로그인 유저 확인하는 방법을 통해 로그인의 유무를 확인. 도중에 __앱이 포그라운드 서비스__ 를 이용해 실행되고 있음을 알게 되어, 정보가 초기화 되지 않는 사실을 깨닫게 됨. 이를 __Application 클래스를 상속__ 받은 클래스에 로그인 유무를 전달하는 방법으로 해결.
+- MainFeed
+    1. [Feed Upload](https://www.naver.com "마우스를 올려놓으면 말풍선이 나옵니다.")
+    2. [Reply](https://www.naver.com "마우스를 올려놓으면 말풍선이 나옵니다.") 
+- Setting
+    1. Logout & Withdrawal
+     <br> 위에 설명한 포그라운드 서비스 때문에 로그아웃, 회원탈퇴를 했을 경우 Application 클래스를 상속 받는 클래스에 로그아웃을 했음을 전달.
+     ```android:Setting.Activity
+     if(user != null){
+         auth.singOut(); 
+         ((NotifyApplication)getApplication()).setIslogin(false);
+        }
+     ```
+- Admin_Feed
+    1. Report classification
+    `코드작성`

@@ -67,7 +67,7 @@
 - Setting
     1. Logout & Withdrawal
      <br> 위에 설명한 포그라운드 서비스 때문에 로그아웃, 회원탈퇴를 했을 경우 Application 클래스를 상속 받는 클래스에 로그아웃을 했음을 전달.
-     ```android
+     ```java
      if(user != null){
          auth.singOut(); 
          ((NotifyApplication)getApplication()).setIslogin(false);
